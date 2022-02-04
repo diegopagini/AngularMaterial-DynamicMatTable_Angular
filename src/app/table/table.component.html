@@ -1,0 +1,6 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-content></ng-content>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</table>
